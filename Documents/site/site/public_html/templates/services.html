@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - ООО "МКД-СЕРВИС"</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/services.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="{{ url_for('static', filename='images/onsova-pech (1).png') }}" alt="Логотип" class="logo">
+                <div class="company-name">
+                    <span class="company-name-top">Общество с ограниченной ответственностью</span>
+                    <span class="company-name-bottom">"МКД-СЕРВИС"</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/company">О компании</a></li>
+                        <li><a href="/services">Услуги</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Объекты</a>
+                            <div class="dropdown-menu">
+                                <a href="/repair-works">Ремонтные работы</a>
+                                <a href="/serviced-objects">Обслуживаемые объекты</a>
+                            </div>
+                        </li>
+                        <li><a href="/contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="services-main">
+        <h1 class="services-title">Услуги</h1>
+        
+        <div class="services-container">
+            <!-- Левое меню -->
+            <div class="services-nav">
+                <ul>
+                    <li><button class="service-btn active" data-service="service1">Общая информация</button></li>
+                    <li><button class="service-btn" data-service="service2">Обслуживание систем теплоснабжения, водоснабжения и водоотведения</button></li>
+                    <li><button class="service-btn" data-service="service3">Сварочные работы</button></li>
+                    <li><button class="service-btn" data-service="service4">Ремонт помещений</button></li>
+                    <li><button class="service-btn" data-service="service5">Ремонт электрооборудования</button></li>
+                    <li><button class="service-btn" data-service="service6">Кровельные работы</button></li>
+                    <li><button class="service-btn" data-service="service7">Обслуживание систем доступа и систем видеонаблюдения</button></li>
+                    <li><button class="service-btn" data-service="service8">Производим текущий и капитальный ремонт зданий и сооружений</button></li>
+                    <li><button class="service-btn" data-service="service9">Уборка мест общего пользования, прилегающей территории</button></li>
+                    <li><button class="service-btn" data-service="service10">Организация пропускного режима на объект и на прилегающую территорию</button></li>
+                </ul>
+            </div>
+            <div class="services-content">
+                <div id="service1" class="service-details active">
+                    <h2>Обслуживание домов</h2>
+                    <div class="service-info">
+                        <p>Мы предоставляем полный комплекс услуг по обслуживанию домов, включая регулярное техническое обслуживание, ремонт и модернизацию всех систем.</p>
+                        <img src="{{ url_for('static', filename='images/pech_mkd.jpg') }}" alt="Обслуживание домов">
+                    </div>
+                </div>
+
+                <div id="service2" class="service-details">
+                    <h2>Сантехнические работы</h2>
+                    <div class="service-info">
+                        <p>Выполняем весь спектр сантехнических работ: от устранения протечек до полной замены коммуникаций.</p>
+                        <img src="{{ url_for('static', filename='images/pech_mkd.jpg') }}" alt="Сантехнические работы">
+                    </div>
+                </div>
+
+                <!-- Остальные секции аналогично -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ООО "МКД-СЕРВИС"</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/seciya.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+h2 {
+    text-align: center;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.about-section img {
+    max-width: 300px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.about-section p {
+    flex: 1;
+}
+.content-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+.content-section img {
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.content-section p {
+    flex: 1;
+}

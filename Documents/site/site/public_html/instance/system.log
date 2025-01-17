@@ -1,0 +1,479 @@
+2024-12-27 22:02:55,339 - WARNING -  * Debugger is active!
+2024-12-27 22:02:55,341 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:03:29,108 - INFO - 127.0.0.1 - - [27/Dec/2024 22:03:29] "[33mGET /admin HTTP/1.1[0m" 404 -
+2024-12-27 22:03:36,018 - INFO - 127.0.0.1 - - [27/Dec/2024 22:03:36] "GET /admin_login HTTP/1.1" 200 -
+2024-12-27 22:03:36,092 - INFO - 127.0.0.1 - - [27/Dec/2024 22:03:36] "[36mGET /static/css/admin_login.css HTTP/1.1[0m" 304 -
+2024-12-27 22:04:07,084 - INFO - 127.0.0.1 - - [27/Dec/2024 22:04:07] "GET /admin_login HTTP/1.1" 200 -
+2024-12-27 22:04:07,106 - INFO - 127.0.0.1 - - [27/Dec/2024 22:04:07] "GET /static/css/admin_login.css HTTP/1.1" 200 -
+2024-12-27 22:04:11,258 - INFO - 127.0.0.1 - - [27/Dec/2024 22:04:11] "[32mPOST /admin_login HTTP/1.1[0m" 302 -
+2024-12-27 22:04:11,277 - INFO - 127.0.0.1 - - [27/Dec/2024 22:04:11] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:04:11,315 - INFO - 127.0.0.1 - - [27/Dec/2024 22:04:11] "GET /static/css/admin.css HTTP/1.1" 200 -
+2024-12-27 22:04:17,154 - INFO - 127.0.0.1 - - [27/Dec/2024 22:04:17] "[32mPOST /add_news HTTP/1.1[0m" 302 -
+2024-12-27 22:04:17,165 - INFO - 127.0.0.1 - - [27/Dec/2024 22:04:17] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:04:17,198 - INFO - 127.0.0.1 - - [27/Dec/2024 22:04:17] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:04:19,204 - INFO - 127.0.0.1 - - [27/Dec/2024 22:04:19] "[32mPOST /add_object HTTP/1.1[0m" 302 -
+2024-12-27 22:04:19,216 - INFO - 127.0.0.1 - - [27/Dec/2024 22:04:19] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:04:19,244 - INFO - 127.0.0.1 - - [27/Dec/2024 22:04:19] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:04:20,961 - INFO - 127.0.0.1 - - [27/Dec/2024 22:04:20] "[32mPOST /add_repair HTTP/1.1[0m" 302 -
+2024-12-27 22:04:20,974 - INFO - 127.0.0.1 - - [27/Dec/2024 22:04:20] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:04:21,009 - INFO - 127.0.0.1 - - [27/Dec/2024 22:04:21] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:04:32,921 - INFO - 127.0.0.1 - - [27/Dec/2024 22:04:32] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:04:32,943 - INFO - 127.0.0.1 - - [27/Dec/2024 22:04:32] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:04:36,751 - INFO - 127.0.0.1 - - [27/Dec/2024 22:04:36] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:04:36,772 - INFO - 127.0.0.1 - - [27/Dec/2024 22:04:36] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:07:59,023 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\models.py', reloading
+2024-12-27 22:07:59,965 - WARNING -  * Debugger is active!
+2024-12-27 22:07:59,967 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:08:24,029 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:08:25,011 - WARNING -  * Debugger is active!
+2024-12-27 22:08:25,013 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:08:52,580 - INFO - 127.0.0.1 - - [27/Dec/2024 22:08:52] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:08:52,632 - INFO - 127.0.0.1 - - [27/Dec/2024 22:08:52] "GET /static/css/admin.css HTTP/1.1" 200 -
+2024-12-27 22:08:57,072 - INFO - 127.0.0.1 - - [27/Dec/2024 22:08:57] "[32mPOST /add_object HTTP/1.1[0m" 302 -
+2024-12-27 22:08:57,078 - INFO - 127.0.0.1 - - [27/Dec/2024 22:08:57] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:08:57,114 - INFO - 127.0.0.1 - - [27/Dec/2024 22:08:57] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:09:28,608 - INFO - 127.0.0.1 - - [27/Dec/2024 22:09:28] "[32mPOST /add_repair HTTP/1.1[0m" 302 -
+2024-12-27 22:09:28,613 - INFO - 127.0.0.1 - - [27/Dec/2024 22:09:28] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:09:28,646 - INFO - 127.0.0.1 - - [27/Dec/2024 22:09:28] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:09:32,307 - INFO - 127.0.0.1 - - [27/Dec/2024 22:09:32] "[32mPOST /delete_repair/11 HTTP/1.1[0m" 302 -
+2024-12-27 22:09:32,313 - INFO - 127.0.0.1 - - [27/Dec/2024 22:09:32] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:09:32,344 - INFO - 127.0.0.1 - - [27/Dec/2024 22:09:32] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:10:02,474 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:02] "GET / HTTP/1.1" 200 -
+2024-12-27 22:10:02,532 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:10:02,534 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:02] "[33mGET /static/images/company.jpg HTTP/1.1[0m" 404 -
+2024-12-27 22:10:02,534 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:02] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:10:04,499 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:04] "GET /repair-works HTTP/1.1" 200 -
+2024-12-27 22:10:04,545 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:10:04,549 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:04] "[36mGET /static/css/repair_works.css HTTP/1.1[0m" 304 -
+2024-12-27 22:10:04,550 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:04] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:10:07,991 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:07] "GET /serviced-objects HTTP/1.1" 200 -
+2024-12-27 22:10:08,018 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:10:08,025 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:08] "[36mGET /static/css/serviced_objects.css HTTP/1.1[0m" 304 -
+2024-12-27 22:10:08,027 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:08] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:10:13,588 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:13] "GET / HTTP/1.1" 200 -
+2024-12-27 22:10:13,618 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:10:13,619 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:13] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:10:13,625 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:13] "[33mGET /static/images/company.jpg HTTP/1.1[0m" 404 -
+2024-12-27 22:10:23,477 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:23] "GET /admin_login HTTP/1.1" 200 -
+2024-12-27 22:10:23,513 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:23] "[36mGET /static/css/admin_login.css HTTP/1.1[0m" 304 -
+2024-12-27 22:10:28,233 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:28] "[32mPOST /admin_login HTTP/1.1[0m" 302 -
+2024-12-27 22:10:28,239 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:28] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:10:28,273 - INFO - 127.0.0.1 - - [27/Dec/2024 22:10:28] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:11:41,461 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\utils.py', reloading
+2024-12-27 22:11:42,420 - WARNING -  * Debugger is active!
+2024-12-27 22:11:42,421 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:14:19,144 - INFO - 127.0.0.1 - - [27/Dec/2024 22:14:19] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:14:19,181 - INFO - 127.0.0.1 - - [27/Dec/2024 22:14:19] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:14:24,897 - INFO - 127.0.0.1 - - [27/Dec/2024 22:14:24] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:14:24,923 - INFO - 127.0.0.1 - - [27/Dec/2024 22:14:24] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:14:30,110 - INFO - 127.0.0.1 - - [27/Dec/2024 22:14:30] "GET /admin_login HTTP/1.1" 200 -
+2024-12-27 22:14:30,145 - INFO - 127.0.0.1 - - [27/Dec/2024 22:14:30] "[36mGET /static/css/admin_login.css HTTP/1.1[0m" 304 -
+2024-12-27 22:14:34,516 - INFO - 127.0.0.1 - - [27/Dec/2024 22:14:34] "[32mPOST /admin_login HTTP/1.1[0m" 302 -
+2024-12-27 22:14:34,522 - INFO - 127.0.0.1 - - [27/Dec/2024 22:14:34] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:14:34,558 - INFO - 127.0.0.1 - - [27/Dec/2024 22:14:34] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:15:44,373 - INFO - 127.0.0.1 - - [27/Dec/2024 22:15:44] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:15:44,395 - INFO - 127.0.0.1 - - [27/Dec/2024 22:15:44] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:16:20,307 - INFO - 127.0.0.1 - - [27/Dec/2024 22:16:20] "GET /admin_login HTTP/1.1" 200 -
+2024-12-27 22:16:20,343 - INFO - 127.0.0.1 - - [27/Dec/2024 22:16:20] "[36mGET /static/css/admin_login.css HTTP/1.1[0m" 304 -
+2024-12-27 22:16:24,610 - INFO - 127.0.0.1 - - [27/Dec/2024 22:16:24] "[32mPOST /admin_login HTTP/1.1[0m" 302 -
+2024-12-27 22:16:24,616 - INFO - 127.0.0.1 - - [27/Dec/2024 22:16:24] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:16:24,656 - INFO - 127.0.0.1 - - [27/Dec/2024 22:16:24] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:16:51,130 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:18:43,721 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-27 22:18:43,721 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-27 22:18:43,722 - INFO -  * Restarting with stat
+2024-12-27 22:18:44,576 - WARNING -  * Debugger is active!
+2024-12-27 22:18:44,578 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:19:00,726 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:00] "GET / HTTP/1.1" 200 -
+2024-12-27 22:19:00,774 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:00] "[33mGET /static/images/company.jpg HTTP/1.1[0m" 404 -
+2024-12-27 22:19:00,783 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:19:00,788 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:00] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:19:01,759 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:01] "GET /company HTTP/1.1" 200 -
+2024-12-27 22:19:01,794 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:19:01,801 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:01] "[36mGET /static/css/company.css HTTP/1.1[0m" 304 -
+2024-12-27 22:19:01,805 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:01] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:19:01,805 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:01] "[36mGET /static/images/pech_mkd.jpg HTTP/1.1[0m" 304 -
+2024-12-27 22:19:02,138 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:02] "GET /services HTTP/1.1" 200 -
+2024-12-27 22:19:02,165 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:19:02,172 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:02] "[36mGET /static/css/services.css HTTP/1.1[0m" 304 -
+2024-12-27 22:19:02,175 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:02] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:19:02,176 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:02] "[36mGET /static/images/pech_mkd.jpg HTTP/1.1[0m" 304 -
+2024-12-27 22:19:02,176 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:02] "[36mGET /static/js/seciya.js HTTP/1.1[0m" 304 -
+2024-12-27 22:19:02,540 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:02] "GET /contacts HTTP/1.1" 200 -
+2024-12-27 22:19:02,574 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:19:02,586 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:02] "[36mGET /static/css/contacts.css HTTP/1.1[0m" 304 -
+2024-12-27 22:19:02,592 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:02] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:19:02,593 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:02] "[36mGET /static/js/map.js HTTP/1.1[0m" 304 -
+2024-12-27 22:19:05,955 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:05] "GET /repair-works HTTP/1.1" 200 -
+2024-12-27 22:19:05,984 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:19:05,992 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:05] "[36mGET /static/css/repair_works.css HTTP/1.1[0m" 304 -
+2024-12-27 22:19:05,999 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:05] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:19:07,031 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:07] "GET /serviced-objects HTTP/1.1" 200 -
+2024-12-27 22:19:07,064 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:19:07,073 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:07] "[36mGET /static/css/serviced_objects.css HTTP/1.1[0m" 304 -
+2024-12-27 22:19:07,076 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:07] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:19:13,652 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:13] "GET /admin_login HTTP/1.1" 200 -
+2024-12-27 22:19:13,684 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:13] "[36mGET /static/css/admin_login.css HTTP/1.1[0m" 304 -
+2024-12-27 22:19:17,838 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:17] "[32mPOST /admin_login HTTP/1.1[0m" 302 -
+2024-12-27 22:19:17,850 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:17] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:19:17,883 - INFO - 127.0.0.1 - - [27/Dec/2024 22:19:17] "GET /static/css/admin.css HTTP/1.1" 200 -
+2024-12-27 22:20:47,207 - INFO - 127.0.0.1 - - [27/Dec/2024 22:20:47] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:20:47,231 - INFO - 127.0.0.1 - - [27/Dec/2024 22:20:47] "GET /static/css/admin.css HTTP/1.1" 200 -
+2024-12-27 22:22:12,016 - INFO - 127.0.0.1 - - [27/Dec/2024 22:22:12] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:22:12,040 - INFO - 127.0.0.1 - - [27/Dec/2024 22:22:12] "GET /static/css/admin.css HTTP/1.1" 200 -
+2024-12-27 22:22:44,021 - INFO - 127.0.0.1 - - [27/Dec/2024 22:22:44] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:22:44,043 - INFO - 127.0.0.1 - - [27/Dec/2024 22:22:44] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:22:46,174 - INFO - 127.0.0.1 - - [27/Dec/2024 22:22:46] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:22:46,197 - INFO - 127.0.0.1 - - [27/Dec/2024 22:22:46] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:22:48,915 - INFO - 127.0.0.1 - - [27/Dec/2024 22:22:48] "[32mPOST /add_news HTTP/1.1[0m" 302 -
+2024-12-27 22:22:48,921 - INFO - 127.0.0.1 - - [27/Dec/2024 22:22:48] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:22:48,954 - INFO - 127.0.0.1 - - [27/Dec/2024 22:22:48] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:24:23,374 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:24:23,445 - INFO -  * Restarting with stat
+2024-12-27 22:24:24,397 - WARNING -  * Debugger is active!
+2024-12-27 22:24:24,399 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:24:25,407 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:24:25,458 - INFO -  * Restarting with stat
+2024-12-27 22:24:26,351 - WARNING -  * Debugger is active!
+2024-12-27 22:24:26,353 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:24:28,362 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:24:28,411 - INFO -  * Restarting with stat
+2024-12-27 22:24:29,414 - WARNING -  * Debugger is active!
+2024-12-27 22:24:29,415 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:25:09,515 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:25:09,572 - INFO -  * Restarting with stat
+2024-12-27 22:25:10,529 - WARNING -  * Debugger is active!
+2024-12-27 22:25:10,531 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:25:26,577 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\utils.py', reloading
+2024-12-27 22:25:26,633 - INFO -  * Restarting with stat
+2024-12-27 22:25:27,571 - WARNING -  * Debugger is active!
+2024-12-27 22:25:27,573 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:25:36,690 - INFO - 127.0.0.1 - - [27/Dec/2024 22:25:36] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:25:36,734 - INFO - 127.0.0.1 - - [27/Dec/2024 22:25:36] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:25:39,749 - INFO - 127.0.0.1 - - [27/Dec/2024 22:25:39] "[35m[1mPOST /add_news HTTP/1.1[0m" 500 -
+2024-12-27 22:25:39,783 - INFO - 127.0.0.1 - - [27/Dec/2024 22:25:39] "GET /add_news?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-27 22:25:39,786 - INFO - 127.0.0.1 - - [27/Dec/2024 22:25:39] "GET /add_news?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-27 22:25:39,804 - INFO - 127.0.0.1 - - [27/Dec/2024 22:25:39] "GET /add_news?__debugger__=yes&cmd=resource&f=console.png&s=dJUvk3IUNNQvL1KF38fr HTTP/1.1" 200 -
+2024-12-27 22:25:39,843 - INFO - 127.0.0.1 - - [27/Dec/2024 22:25:39] "GET /add_news?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-12-27 22:25:50,369 - INFO - 127.0.0.1 - - [27/Dec/2024 22:25:50] "GET /admin_login HTTP/1.1" 200 -
+2024-12-27 22:25:50,394 - INFO - 127.0.0.1 - - [27/Dec/2024 22:25:50] "[36mGET /static/css/admin_login.css HTTP/1.1[0m" 304 -
+2024-12-27 22:25:54,421 - INFO - 127.0.0.1 - - [27/Dec/2024 22:25:54] "[32mPOST /admin_login HTTP/1.1[0m" 302 -
+2024-12-27 22:25:54,427 - INFO - 127.0.0.1 - - [27/Dec/2024 22:25:54] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:25:54,469 - INFO - 127.0.0.1 - - [27/Dec/2024 22:25:54] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:26:33,867 - INFO - 127.0.0.1 - - [27/Dec/2024 22:26:33] "[35m[1mPOST /add_news HTTP/1.1[0m" 500 -
+2024-12-27 22:26:33,902 - INFO - 127.0.0.1 - - [27/Dec/2024 22:26:33] "[36mGET /add_news?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:26:33,907 - INFO - 127.0.0.1 - - [27/Dec/2024 22:26:33] "[36mGET /add_news?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-27 22:26:33,921 - INFO - 127.0.0.1 - - [27/Dec/2024 22:26:33] "[36mGET /add_news?__debugger__=yes&cmd=resource&f=console.png&s=dJUvk3IUNNQvL1KF38fr HTTP/1.1[0m" 304 -
+2024-12-27 22:27:04,803 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:27:04,858 - INFO -  * Restarting with stat
+2024-12-27 22:27:05,770 - WARNING -  * Debugger is active!
+2024-12-27 22:27:05,772 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:27:06,780 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:27:06,837 - INFO -  * Restarting with stat
+2024-12-27 22:27:07,721 - WARNING -  * Debugger is active!
+2024-12-27 22:27:07,723 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:27:16,415 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:16] "[32mPOST /add_news HTTP/1.1[0m" 302 -
+2024-12-27 22:27:16,429 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:16] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:27:16,470 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:16] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:27:28,021 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:28] "GET / HTTP/1.1" 200 -
+2024-12-27 22:27:28,090 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:27:28,092 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:28] "[33mGET /static/images/company.jpg HTTP/1.1[0m" 404 -
+2024-12-27 22:27:28,092 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:28] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:27:32,244 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:32] "GET /repair-works HTTP/1.1" 200 -
+2024-12-27 22:27:32,279 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:27:32,284 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:32] "[36mGET /static/css/repair_works.css HTTP/1.1[0m" 304 -
+2024-12-27 22:27:32,284 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:32] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:27:33,784 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:33] "GET /serviced-objects HTTP/1.1" 200 -
+2024-12-27 22:27:33,809 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:27:33,817 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:33] "[36mGET /static/css/serviced_objects.css HTTP/1.1[0m" 304 -
+2024-12-27 22:27:33,817 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:33] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:27:40,499 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:40] "[32mPOST /add_object HTTP/1.1[0m" 302 -
+2024-12-27 22:27:40,505 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:40] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:27:40,538 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:40] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:27:48,533 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:48] "[32mPOST /add_object HTTP/1.1[0m" 302 -
+2024-12-27 22:27:48,539 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:48] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:27:48,568 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:48] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:27:54,067 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:54] "[32mPOST /add_repair HTTP/1.1[0m" 302 -
+2024-12-27 22:27:54,073 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:54] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:27:54,106 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:54] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:27:59,626 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:59] "[32mPOST /delete_object/12 HTTP/1.1[0m" 302 -
+2024-12-27 22:27:59,631 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:59] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:27:59,661 - INFO - 127.0.0.1 - - [27/Dec/2024 22:27:59] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:28:01,370 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:01] "[32mPOST /delete_object/13 HTTP/1.1[0m" 302 -
+2024-12-27 22:28:01,375 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:01] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:28:01,408 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:01] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:28:02,567 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:02] "[32mPOST /delete_object/11 HTTP/1.1[0m" 302 -
+2024-12-27 22:28:02,573 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:02] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:28:02,602 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:02] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:28:03,654 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:03] "[32mPOST /delete_object/10 HTTP/1.1[0m" 302 -
+2024-12-27 22:28:03,660 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:03] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:28:03,691 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:03] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:28:04,797 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:04] "[32mPOST /delete_object/9 HTTP/1.1[0m" 302 -
+2024-12-27 22:28:04,802 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:04] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:28:04,835 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:04] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:28:05,863 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:05] "[32mPOST /delete_object/8 HTTP/1.1[0m" 302 -
+2024-12-27 22:28:05,869 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:05] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:28:05,902 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:05] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:28:07,204 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:07] "[32mPOST /delete_object/7 HTTP/1.1[0m" 302 -
+2024-12-27 22:28:07,210 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:07] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:28:07,235 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:07] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:28:08,304 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:08] "[32mPOST /delete_object/6 HTTP/1.1[0m" 302 -
+2024-12-27 22:28:08,310 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:08] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:28:08,344 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:08] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:28:11,050 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:11] "[32mPOST /add_object HTTP/1.1[0m" 302 -
+2024-12-27 22:28:11,055 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:11] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:28:11,083 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:11] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:28:14,776 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:14] "[32mPOST /add_news HTTP/1.1[0m" 302 -
+2024-12-27 22:28:14,786 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:14] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:28:14,819 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:14] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:28:20,556 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:20] "GET / HTTP/1.1" 200 -
+2024-12-27 22:28:20,583 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:28:20,590 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:20] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:28:20,594 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:20] "[33mGET /static/images/company.jpg HTTP/1.1[0m" 404 -
+2024-12-27 22:28:50,208 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:50] "[32mPOST /add_object HTTP/1.1[0m" 302 -
+2024-12-27 22:28:50,214 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:50] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:28:50,245 - INFO - 127.0.0.1 - - [27/Dec/2024 22:28:50] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:29:24,048 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:29:24,100 - INFO -  * Restarting with stat
+2024-12-27 22:29:25,005 - WARNING -  * Debugger is active!
+2024-12-27 22:29:25,007 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:29:35,035 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:29:35,083 - INFO -  * Restarting with stat
+2024-12-27 22:29:35,989 - WARNING -  * Debugger is active!
+2024-12-27 22:29:35,991 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:29:41,623 - INFO - 127.0.0.1 - - [27/Dec/2024 22:29:41] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:29:41,668 - INFO - 127.0.0.1 - - [27/Dec/2024 22:29:41] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:29:47,252 - INFO - 127.0.0.1 - - [27/Dec/2024 22:29:47] "[32mPOST /add_object HTTP/1.1[0m" 302 -
+2024-12-27 22:29:47,258 - INFO - 127.0.0.1 - - [27/Dec/2024 22:29:47] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:29:47,291 - INFO - 127.0.0.1 - - [27/Dec/2024 22:29:47] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:29:50,219 - INFO - 127.0.0.1 - - [27/Dec/2024 22:29:50] "[32mPOST /add_object HTTP/1.1[0m" 302 -
+2024-12-27 22:29:50,224 - INFO - 127.0.0.1 - - [27/Dec/2024 22:29:50] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:29:50,254 - INFO - 127.0.0.1 - - [27/Dec/2024 22:29:50] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:29:52,072 - INFO - 127.0.0.1 - - [27/Dec/2024 22:29:52] "[32mPOST /add_news HTTP/1.1[0m" 302 -
+2024-12-27 22:29:52,077 - INFO - 127.0.0.1 - - [27/Dec/2024 22:29:52] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:29:52,111 - INFO - 127.0.0.1 - - [27/Dec/2024 22:29:52] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:29:54,107 - INFO - 127.0.0.1 - - [27/Dec/2024 22:29:54] "[32mPOST /add_news HTTP/1.1[0m" 302 -
+2024-12-27 22:29:54,113 - INFO - 127.0.0.1 - - [27/Dec/2024 22:29:54] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:29:54,144 - INFO - 127.0.0.1 - - [27/Dec/2024 22:29:54] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:30:00,590 - INFO - 127.0.0.1 - - [27/Dec/2024 22:30:00] "[32mPOST /add_repair HTTP/1.1[0m" 302 -
+2024-12-27 22:30:00,595 - INFO - 127.0.0.1 - - [27/Dec/2024 22:30:00] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:30:00,628 - INFO - 127.0.0.1 - - [27/Dec/2024 22:30:00] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:30:02,776 - INFO - 127.0.0.1 - - [27/Dec/2024 22:30:02] "[32mPOST /add_repair HTTP/1.1[0m" 302 -
+2024-12-27 22:30:02,782 - INFO - 127.0.0.1 - - [27/Dec/2024 22:30:02] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:30:02,812 - INFO - 127.0.0.1 - - [27/Dec/2024 22:30:02] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:30:04,682 - INFO - 127.0.0.1 - - [27/Dec/2024 22:30:04] "[32mPOST /add_repair HTTP/1.1[0m" 302 -
+2024-12-27 22:30:04,688 - INFO - 127.0.0.1 - - [27/Dec/2024 22:30:04] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:30:04,721 - INFO - 127.0.0.1 - - [27/Dec/2024 22:30:04] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:30:13,315 - INFO - 127.0.0.1 - - [27/Dec/2024 22:30:13] "GET / HTTP/1.1" 200 -
+2024-12-27 22:30:13,340 - INFO - 127.0.0.1 - - [27/Dec/2024 22:30:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:30:13,342 - INFO - 127.0.0.1 - - [27/Dec/2024 22:30:13] "[33mGET /static/images/company.jpg HTTP/1.1[0m" 404 -
+2024-12-27 22:30:13,342 - INFO - 127.0.0.1 - - [27/Dec/2024 22:30:13] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:30:41,154 - INFO - 127.0.0.1 - - [27/Dec/2024 22:30:41] "GET / HTTP/1.1" 200 -
+2024-12-27 22:30:41,176 - INFO - 127.0.0.1 - - [27/Dec/2024 22:30:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:30:41,180 - INFO - 127.0.0.1 - - [27/Dec/2024 22:30:41] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:30:41,184 - INFO - 127.0.0.1 - - [27/Dec/2024 22:30:41] "[33mGET /static/images/company.jpg HTTP/1.1[0m" 404 -
+2024-12-27 22:31:33,438 - INFO - 127.0.0.1 - - [27/Dec/2024 22:31:33] "GET / HTTP/1.1" 200 -
+2024-12-27 22:31:33,463 - INFO - 127.0.0.1 - - [27/Dec/2024 22:31:33] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-27 22:31:33,466 - INFO - 127.0.0.1 - - [27/Dec/2024 22:31:33] "[33mGET /static/images/company.jpg HTTP/1.1[0m" 404 -
+2024-12-27 22:31:33,466 - INFO - 127.0.0.1 - - [27/Dec/2024 22:31:33] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:31:51,161 - INFO - 127.0.0.1 - - [27/Dec/2024 22:31:51] "GET /repair-works HTTP/1.1" 200 -
+2024-12-27 22:31:51,188 - INFO - 127.0.0.1 - - [27/Dec/2024 22:31:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:31:51,194 - INFO - 127.0.0.1 - - [27/Dec/2024 22:31:51] "[36mGET /static/css/repair_works.css HTTP/1.1[0m" 304 -
+2024-12-27 22:31:51,197 - INFO - 127.0.0.1 - - [27/Dec/2024 22:31:51] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:31:52,154 - INFO - 127.0.0.1 - - [27/Dec/2024 22:31:52] "GET /serviced-objects HTTP/1.1" 200 -
+2024-12-27 22:31:52,185 - INFO - 127.0.0.1 - - [27/Dec/2024 22:31:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:31:52,189 - INFO - 127.0.0.1 - - [27/Dec/2024 22:31:52] "[36mGET /static/css/serviced_objects.css HTTP/1.1[0m" 304 -
+2024-12-27 22:31:52,193 - INFO - 127.0.0.1 - - [27/Dec/2024 22:31:52] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:31:53,257 - INFO - 127.0.0.1 - - [27/Dec/2024 22:31:53] "GET / HTTP/1.1" 200 -
+2024-12-27 22:31:53,286 - INFO - 127.0.0.1 - - [27/Dec/2024 22:31:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:31:53,293 - INFO - 127.0.0.1 - - [27/Dec/2024 22:31:53] "[33mGET /static/images/company.jpg HTTP/1.1[0m" 404 -
+2024-12-27 22:31:53,294 - INFO - 127.0.0.1 - - [27/Dec/2024 22:31:53] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:32:06,165 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:06] "GET /company HTTP/1.1" 200 -
+2024-12-27 22:32:06,198 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:32:06,207 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:06] "[36mGET /static/css/company.css HTTP/1.1[0m" 304 -
+2024-12-27 22:32:06,212 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:06] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:32:06,212 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:06] "[36mGET /static/images/pech_mkd.jpg HTTP/1.1[0m" 304 -
+2024-12-27 22:32:06,539 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:06] "GET /services HTTP/1.1" 200 -
+2024-12-27 22:32:06,565 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:32:06,567 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:06] "[36mGET /static/css/services.css HTTP/1.1[0m" 304 -
+2024-12-27 22:32:06,572 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:06] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:32:06,572 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:06] "[36mGET /static/images/pech_mkd.jpg HTTP/1.1[0m" 304 -
+2024-12-27 22:32:06,573 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:06] "[36mGET /static/js/seciya.js HTTP/1.1[0m" 304 -
+2024-12-27 22:32:06,996 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:06] "GET /contacts HTTP/1.1" 200 -
+2024-12-27 22:32:07,030 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:32:07,036 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:07] "[36mGET /static/css/contacts.css HTTP/1.1[0m" 304 -
+2024-12-27 22:32:07,040 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:07] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:32:07,041 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:07] "[36mGET /static/js/map.js HTTP/1.1[0m" 304 -
+2024-12-27 22:32:24,032 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:24] "GET / HTTP/1.1" 200 -
+2024-12-27 22:32:24,059 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:32:24,066 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:24] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:32:24,070 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:24] "[33mGET /static/images/company.jpg HTTP/1.1[0m" 404 -
+2024-12-27 22:32:28,921 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:28] "GET /company HTTP/1.1" 200 -
+2024-12-27 22:32:28,950 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:32:28,960 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:28] "[36mGET /static/css/company.css HTTP/1.1[0m" 304 -
+2024-12-27 22:32:28,965 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:28] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:32:28,965 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:28] "[36mGET /static/images/pech_mkd.jpg HTTP/1.1[0m" 304 -
+2024-12-27 22:32:29,734 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:29] "GET / HTTP/1.1" 200 -
+2024-12-27 22:32:29,761 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-27 22:32:29,767 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:29] "[36mGET /static/images/onsova-pech%20(1).png HTTP/1.1[0m" 304 -
+2024-12-27 22:32:29,773 - INFO - 127.0.0.1 - - [27/Dec/2024 22:32:29] "[33mGET /static/images/company.jpg HTTP/1.1[0m" 404 -
+2024-12-27 22:34:17,679 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:34:17,728 - INFO -  * Restarting with stat
+2024-12-27 22:39:36,196 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-27 22:39:36,197 - INFO - Added job "Archive and clean logs monthly" to job store "default"
+2024-12-27 22:39:36,197 - INFO - Scheduler started
+2024-12-27 22:39:36,205 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-27 22:39:36,205 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-27 22:39:36,206 - INFO -  * Restarting with stat
+2024-12-27 22:39:37,164 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-27 22:39:37,164 - INFO - Added job "Archive and clean logs monthly" to job store "default"
+2024-12-27 22:39:37,164 - INFO - Scheduler started
+2024-12-27 22:39:37,170 - WARNING -  * Debugger is active!
+2024-12-27 22:39:37,172 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:39:41,347 - INFO - Page visit: /add_news - IP: 127.0.0.1
+2024-12-27 22:39:41,398 - INFO - 127.0.0.1 - - [27/Dec/2024 22:39:41] "[32mPOST /add_news HTTP/1.1[0m" 302 -
+2024-12-27 22:39:41,401 - INFO - Page visit: /manage_content - IP: 127.0.0.1
+2024-12-27 22:39:41,413 - INFO - 127.0.0.1 - - [27/Dec/2024 22:39:41] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:39:41,500 - INFO - 127.0.0.1 - - [27/Dec/2024 22:39:41] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:39:44,169 - INFO - Page visit: /add_news - IP: 127.0.0.1
+2024-12-27 22:39:44,205 - INFO - 127.0.0.1 - - [27/Dec/2024 22:39:44] "[32mPOST /add_news HTTP/1.1[0m" 302 -
+2024-12-27 22:39:44,208 - INFO - Page visit: /manage_content - IP: 127.0.0.1
+2024-12-27 22:39:44,211 - INFO - 127.0.0.1 - - [27/Dec/2024 22:39:44] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:39:44,245 - INFO - 127.0.0.1 - - [27/Dec/2024 22:39:44] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:41:42,495 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:41:42,550 - INFO -  * Restarting with stat
+2024-12-27 22:41:43,478 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-27 22:41:43,478 - INFO - Added job "Archive and clean logs monthly" to job store "default"
+2024-12-27 22:41:43,478 - INFO - Scheduler started
+2024-12-27 22:41:43,485 - WARNING -  * Debugger is active!
+2024-12-27 22:41:43,487 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:41:45,497 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:41:45,556 - INFO -  * Restarting with stat
+2024-12-27 22:41:46,560 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-27 22:41:46,561 - INFO - Added job "Archive and clean logs monthly" to job store "default"
+2024-12-27 22:41:46,561 - INFO - Scheduler started
+2024-12-27 22:41:46,567 - WARNING -  * Debugger is active!
+2024-12-27 22:41:46,568 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:42:14,133 - INFO - Page visit: /add_news - IP: 127.0.0.1
+2024-12-27 22:42:14,182 - INFO - news - Добавлена новость: ывфыв - gAAAAABnbub23976ebJECaFAxrIbhxHL5V4cf40n9Bp8iR3pg9-V6X4TeZFJhXL_6XHV4k-J-rhZjHHyYf9N9mtQRGVhBuYtiA==
+2024-12-27 22:42:14,227 - INFO - 127.0.0.1 - - [27/Dec/2024 22:42:14] "[32mPOST /add_news HTTP/1.1[0m" 302 -
+2024-12-27 22:42:14,231 - INFO - Page visit: /manage_content - IP: 127.0.0.1
+2024-12-27 22:42:14,245 - INFO - 127.0.0.1 - - [27/Dec/2024 22:42:14] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:42:14,297 - INFO - 127.0.0.1 - - [27/Dec/2024 22:42:14] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:42:53,740 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:42:53,798 - INFO -  * Restarting with stat
+2024-12-27 22:42:54,715 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-27 22:42:54,716 - INFO - Added job "Archive and clean logs monthly" to job store "default"
+2024-12-27 22:42:54,716 - INFO - Scheduler started
+2024-12-27 22:42:54,721 - WARNING -  * Debugger is active!
+2024-12-27 22:42:54,723 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:42:55,729 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:42:55,785 - INFO -  * Restarting with stat
+2024-12-27 22:42:56,723 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-27 22:42:56,723 - INFO - Added job "Archive and clean logs monthly" to job store "default"
+2024-12-27 22:42:56,723 - INFO - Scheduler started
+2024-12-27 22:42:56,729 - WARNING -  * Debugger is active!
+2024-12-27 22:42:56,731 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:42:59,745 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:42:59,809 - INFO -  * Restarting with stat
+2024-12-27 22:43:00,715 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-27 22:43:00,716 - INFO - Added job "Archive and clean logs monthly" to job store "default"
+2024-12-27 22:43:00,716 - INFO - Scheduler started
+2024-12-27 22:43:00,721 - WARNING -  * Debugger is active!
+2024-12-27 22:43:00,723 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:43:09,707 - INFO - Page visit: /add_news - IP: 127.0.0.1
+2024-12-27 22:43:09,756 - INFO - news - Добавлена новость: 111 - gAAAAABnbuct0JaE8yY8rsoI1ArDWvQUD1MBLKKx7TijFSQmd4RrXYJGVUOxD8AR_22Qg_N1hT1-zcaZP4PWFoi8aXPx15QRrw==
+2024-12-27 22:43:09,760 - INFO - 127.0.0.1 - - [27/Dec/2024 22:43:09] "[32mPOST /add_news HTTP/1.1[0m" 302 -
+2024-12-27 22:43:09,763 - INFO - Page visit: /manage_content - IP: 127.0.0.1
+2024-12-27 22:43:09,777 - INFO - 127.0.0.1 - - [27/Dec/2024 22:43:09] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:43:09,827 - INFO - 127.0.0.1 - - [27/Dec/2024 22:43:09] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:43:51,869 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:43:51,945 - INFO -  * Restarting with stat
+2024-12-27 22:43:52,900 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-27 22:43:52,901 - INFO - Added job "Archive and clean logs monthly" to job store "default"
+2024-12-27 22:43:52,901 - INFO - Scheduler started
+2024-12-27 22:43:52,906 - WARNING -  * Debugger is active!
+2024-12-27 22:43:52,908 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:43:57,926 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:43:58,004 - INFO -  * Restarting with stat
+2024-12-27 22:43:58,983 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-27 22:43:58,983 - INFO - Added job "Archive and clean logs monthly" to job store "default"
+2024-12-27 22:43:58,984 - INFO - Scheduler started
+2024-12-27 22:43:58,989 - WARNING -  * Debugger is active!
+2024-12-27 22:43:58,991 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:43:59,133 - INFO - Page visit: /manage_content - IP: 127.0.0.1
+2024-12-27 22:43:59,150 - INFO - 127.0.0.1 - - [27/Dec/2024 22:43:59] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:43:59,195 - INFO - 127.0.0.1 - - [27/Dec/2024 22:43:59] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:44:04,786 - INFO - Page visit: /add_news - IP: 127.0.0.1
+2024-12-27 22:44:04,832 - INFO - add - news - Добавлена новость: 22222 - gAAAAABnbudkkLozZ0qSZQ1DMPZPWYeCf-M3Q2wQ-fXnoclmHtLWXrJv4zRWKiGmw2R0A_Hcuj75NcW7MCrWV8xKDejp-jaUyw==
+2024-12-27 22:44:04,833 - INFO - 127.0.0.1 - - [27/Dec/2024 22:44:04] "[32mPOST /add_news HTTP/1.1[0m" 302 -
+2024-12-27 22:44:04,836 - INFO - Page visit: /manage_content - IP: 127.0.0.1
+2024-12-27 22:44:04,839 - INFO - 127.0.0.1 - - [27/Dec/2024 22:44:04] "GET /manage_content HTTP/1.1" 200 -
+2024-12-27 22:44:04,868 - INFO - 127.0.0.1 - - [27/Dec/2024 22:44:04] "[36mGET /static/css/admin.css HTTP/1.1[0m" 304 -
+2024-12-27 22:46:50,413 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:46:50,489 - INFO -  * Restarting with stat
+2024-12-27 22:46:51,477 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-27 22:46:51,477 - INFO - Added job "Archive and clean logs monthly" to job store "default"
+2024-12-27 22:46:51,477 - INFO - Scheduler started
+2024-12-27 22:46:51,484 - WARNING -  * Debugger is active!
+2024-12-27 22:46:51,486 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:46:53,497 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:46:53,562 - INFO -  * Restarting with stat
+2024-12-27 22:46:54,537 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-27 22:46:54,538 - INFO - Added job "Archive and clean logs monthly" to job store "default"
+2024-12-27 22:46:54,538 - INFO - Scheduler started
+2024-12-27 22:46:54,544 - WARNING -  * Debugger is active!
+2024-12-27 22:46:54,545 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:47:00,569 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:47:00,643 - INFO -  * Restarting with stat
+2024-12-27 22:47:01,580 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-27 22:47:01,582 - INFO - Added job "Archive and clean logs monthly" to job store "default"
+2024-12-27 22:47:01,582 - INFO - Scheduler started
+2024-12-27 22:47:01,589 - WARNING -  * Debugger is active!
+2024-12-27 22:47:01,591 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:47:04,605 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:47:04,663 - INFO -  * Restarting with stat
+2024-12-27 22:47:05,628 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-27 22:47:05,629 - INFO - Added job "Archive and clean logs monthly" to job store "default"
+2024-12-27 22:47:05,629 - INFO - Scheduler started
+2024-12-27 22:47:05,635 - WARNING -  * Debugger is active!
+2024-12-27 22:47:05,637 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:47:26,697 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:47:26,750 - INFO -  * Restarting with stat
+2024-12-27 22:47:27,731 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-27 22:47:27,732 - INFO - Added job "Archive and clean logs monthly" to job store "default"
+2024-12-27 22:47:27,732 - INFO - Scheduler started
+2024-12-27 22:47:27,738 - WARNING -  * Debugger is active!
+2024-12-27 22:47:27,739 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:48:23,881 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:48:23,931 - INFO -  * Restarting with stat
+2024-12-27 22:48:24,873 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-27 22:48:24,874 - INFO - Added job "Archive and clean logs monthly" to job store "default"
+2024-12-27 22:48:24,874 - INFO - Scheduler started
+2024-12-27 22:48:24,879 - WARNING -  * Debugger is active!
+2024-12-27 22:48:24,881 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:49:18,032 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:49:18,098 - INFO -  * Restarting with stat
+2024-12-27 22:49:19,083 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-27 22:49:19,084 - INFO - Added job "Archive and clean logs monthly" to job store "default"
+2024-12-27 22:49:19,084 - INFO - Scheduler started
+2024-12-27 22:49:19,090 - WARNING -  * Debugger is active!
+2024-12-27 22:49:19,093 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:49:23,109 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:49:23,155 - INFO -  * Restarting with stat
+2024-12-27 22:49:24,073 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-27 22:49:24,074 - INFO - Added job "Archive and clean logs monthly" to job store "default"
+2024-12-27 22:49:24,074 - INFO - Scheduler started
+2024-12-27 22:49:24,080 - WARNING -  * Debugger is active!
+2024-12-27 22:49:24,082 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:50:43,282 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:50:43,357 - INFO -  * Restarting with stat
+2024-12-27 22:50:44,378 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-27 22:50:44,379 - INFO - Added job "Archive and clean logs monthly" to job store "default"
+2024-12-27 22:50:44,379 - INFO - Scheduler started
+2024-12-27 22:50:44,386 - WARNING -  * Debugger is active!
+2024-12-27 22:50:44,388 - INFO -  * Debugger PIN: 128-578-489
+2024-12-27 22:50:50,410 - INFO -  * Detected change in 'c:\\Users\\zroma\\Documents\\YK_SITE\\main.py', reloading
+2024-12-27 22:50:50,470 - INFO -  * Restarting with stat

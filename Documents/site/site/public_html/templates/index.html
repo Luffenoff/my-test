@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - ООО "МКД-СЕРВИС"</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="{{ url_for('static', filename='images/onsova-pech (1).png') }}" alt="Логотип" class="logo">
+                <div class="company-name">
+                    <span class="company-name-top">Общество с ограниченной ответственностью</span>
+                    <span class="company-name-bottom">"МКД-СЕРВИС"</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="{{ url_for('home') }}">Главная</a></li>
+                        <li><a href="{{ url_for('company') }}">О компании</a></li>
+                        <li><a href="{{ url_for('services') }}">Услуги</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Объекты</a>
+                            <div class="dropdown-menu">
+                                <a href="{{ url_for('repair_works') }}">Ремонтные работы</a>
+                                <a href="{{ url_for('serviced_objects') }}">Обслуживаемые объекты</a>
+                            </div>
+                        </li>
+                        <li><a href="{{ url_for('contacts') }}">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="content-wrapper">
+            <section class="news-section">
+                <h2>Новости</h2>
+                <ul class="news-list">
+                    {% if news_items %}
+                        {% for news in news_items %}
+                            <li>
+                                <div class="news-item">
+                                    {% if news.photo_path %}
+                                        <img src="{{ url_for('static', filename='uploads/' + news.photo_path) }}" alt="{{ news.title }}" class="news-image">
+                                    {% endif %}
+                                    <h3>{{ news.title }}</h3>
+                                    <p>{{ news.content }}</p>
+                                    <span class="news-date">{{ news.date_posted.strftime('%d.%m.%Y') }}</span>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    {% else %}
+                        <li>
+                            <div class="news-item">
+                                <h3>Новостей пока нет</h3>
+                                <p>В ближайшее время здесь появятся новости компании</p>
+                            </div>
+                        </li>
+                    {% endif %}
+                </ul>
+            </section>
+            <section class="about-section">
+                <h2>О компании</h2>
+                <p><strong>ОГРН:</strong> 1234567890123</p>
+                <p><strong>ИНН:</strong> 9876543210</p>
+                <p><strong>Номер лицензии:</strong> Л-123456789</p>
+                <img src="{{ url_for('static', filename='images/company.jpg') }}" alt="Фото компании" class="company-photo">
+                <h3>Экстренные службы:</h3>
+                <ul class="emergency-numbers">
+                    <li>Пожарная: 101</li>
+                    <li>Скорая помощь: 103</li>
+                    <li>Полиция: 102</li>
+                </ul>
+            </section>
+            <section class="side-section">
+                <h2>Погода</h2>
+                <div id="weather-widget" class="weather-info">
+                    <p class="weather-temp">{{ weather.temp }}°C</p>
+                    <p class="weather-desc">{{ weather.description }}</p>
+                    <div class="weather-details">
+                        <p>Влажность: {{ weather.humidity }}%</p>
+                        <p>Давление: {{ weather.pressure }} мм рт.ст.</p>
+                        <p>Ветер: {{ weather.wind_speed }} м/с</p>
+                    </div>
+                    <p class="weather-update">Обновлено в {{ weather.updated_at }}</p>
+                </div>
+                <h2>Партнёры</h2>
+                <ul class="partners-links">
+                    <li><a href="#">Партнёр 1</a></li>
+                    <li><a href="#">Партнёр 2</a></li>
+                    <li><a href="#">Партнёр 3</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 ООО "МКД-СЕРВИС"</p>
+    </footer>
+</body>
+</html>

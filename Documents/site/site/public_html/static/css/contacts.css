@@ -1,0 +1,114 @@
+.contacts-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-info-top {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contacts-content {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.map-container {
+    flex: 2;
+    min-height: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.address-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.address-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.address-table td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.district {
+    font-weight: bold;
+    color: #555;
+    width: 40%;
+}
+
+.address-btn {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    font-size: 14px;
+}
+
+.address-btn:hover {
+    background-color: #e0e0e0;
+    transform: translateX(5px);
+}
+
+.address-btn.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.contact-info-bottom {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-info h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.main-info p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Медиа-запрос для адаптивности */
+@media (max-width: 968px) {
+    .contacts-content {
+        flex-direction: column;
+    }
+    
+    .map-container {
+        min-height: 400px;
+    }
+    
+    .address-table td {
+        display: block;
+        width: 100%;
+    }
+    
+    .district {
+        width: 100%;
+        padding-bottom: 5px;
+    }
+
+    .contact-info-bottom {
+        margin-top: 20px;
+    }
+}

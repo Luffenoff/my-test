@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовые объекты - ООО "МКД-СЕРВИС"</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/test_objects.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="{{ url_for('static', filename='images/osnova3.png') }}" alt="Логотип" class="logo">
+                <span class="company-name">+222(2222)</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/company">О компании</a></li>
+                    <li><a href="/services">Услуги</a></li>
+                    <li><a href="/objects">Объекты</a></li>
+                    <li><a href="/contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="objects-container">
+            <h1>Обслуживаемые объекты</h1>
+            
+            <div class="objects-columns">
+                <!-- Левая колонка - Ремонтные работы -->
+                <div class="objects-column">
+                    <h2>Ремонтные работы</h2>
+                    {% for repair in repairs %}
+                    <div class="object-card repair-card">
+                        <h3>{{ repair.address }}</h3>
+                        <div class="object-details">
+                            <p><strong>Вид работ:</strong> {{ repair.work_type }}</p>
+                            {% if repair.description %}
+                            <p><strong>Описание:</strong> {{ repair.description }}</p>
+                            {% endif %}
+                        </div>
+                        {% if repair.photo_path %}
+                        <div class="photo-placeholder">
+                            <span>Фото будет добавлено</span>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <!-- Правая колонка - Обслуживае��ые объекты -->
+                <div class="objects-column">
+                    <h2>Обслуживаемые объекты</h2>
+                    {% for object in objects %}
+                    <div class="object-card">
+                        <h3>{{ object.address }}</h3>
+                        <div class="object-details">
+                            <p><strong>Площадь:</strong> {{ object.square_meters }} м²</p>
+                            <p><strong>Характеристики:</strong></p>
+                            <p>{{ object.characteristics }}</p>
+                        </div>
+                        {% if object.photo_path %}
+                        <div class="photo-placeholder">
+                            <span>Фото будет добавлено</span>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ООО "МКД-СЕРВИС"</p>
+    </footer>
+</body>
+</html> 

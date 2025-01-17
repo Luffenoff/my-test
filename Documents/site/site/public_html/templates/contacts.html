@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - ООО "МКД-СЕРВИС"</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/contacts.css">
+    <script src="https://maps.api.2gis.ru/2.0/loader.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="{{ url_for('static', filename='images/onsova-pech (1).png') }}" alt="Логотип" class="logo">
+                <div class="company-name">
+                    <span class="company-name-top">Общество с ограниченной ответственностью</span>
+                    <span class="company-name-bottom">"МКД-СЕРВИС"</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/company">О компании</a></li>
+                        <li><a href="/services">Услуги</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Объекты</a>
+                            <div class="dropdown-menu">
+                                <a href="/repair-works">Ремонтные работы</a>
+                                <a href="/serviced-objects">Обслуживаемые объекты</a>
+                            </div>
+                        </li>
+                        <li><a href="/contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contacts-container">
+            <h2 class="contacts-title">Контакты</h2>
+            
+            <div class="contact-info-top">
+                <div class="main-info">
+                    <h3>Центральный офис</h3>
+                    <p>г. Пермь, Менжинского 53А</p>
+                    
+                    <h3>Способы проезда</h3>
+                    <p>Автобус 56, электричка 1</p>
+                    
+                    <h3>Время работы</h3>
+                    <p>Пн-Пт с 9:00 до 18:00</p>
+                    <p>Сб-Вс: выходной</p>
+                </div>
+            </div>
+            
+            <div class="contacts-content">
+                <div id="map-container" class="map-container">
+                    <!-- Карта будет здесь -->
+                </div>
+                <div class="address-section">
+                    <h3>Наши адреса:</h3>
+                    <table class="address-table">
+                        <tr>
+                            <td class="district">Дзержинский район:</td>
+                            <td>
+                                <button class="address-btn" data-coords="58.123139, 56.391607">
+                                    ул. Менжинского 53А
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="district">Свердловский район:</td>
+                            <td>
+                                <button class="address-btn" data-coords="58.013765, 56.248462">
+                                    ул. Леонова 10
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="district">Дзержинский район:</td>
+                            <td>
+                                <button class="address-btn" data-coords="58.003175, 56.239392">
+                                    ул. Подлесная 43/1
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="contact-info-bottom">
+                <div class="main-info">
+                    <h3>Дополнительная информация</h3>
+                    <p>г. Пермь, Менжинского 53А</p>
+                    
+                    <h3>Способы проезда</h3>
+                    <p>Автобус 56, электричка 1</p>
+                    
+                    <h3>Время работы</h3>
+                    <p>Пн-Пт с 9:00 до 18:00</p>
+                    <p>Сб-Вс: выходной</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 ООО "МКД-СЕРВИС"</p>
+    </footer>
+    <script src="static/js/map.js"></script>
+</body>
+</html>

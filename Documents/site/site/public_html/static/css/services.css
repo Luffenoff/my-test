@@ -1,0 +1,180 @@
+/* custom.css */
+.service-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sub-service {
+    display: flex;
+    align-items: center;
+}
+
+.sub-service.left-photo {
+    flex-direction: row-reverse; /* Фото слева, текст справа */
+}
+
+.sub-service.right-photo {
+    flex-direction: row; /* Фото справа, текст слева */
+}
+
+.service-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.service-details img {
+    width: 200px; /* Размер фото, можно подогнать по необходимости */
+    height: auto;
+}
+
+.sub-service h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.service-details p {
+    flex: 1;
+}
+
+/* Картинки слева */
+.left-photo .service-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.left-photo img {
+    order: 0; /* Картинка остается слева */
+    max-width: 150px;
+    height: auto;
+}
+
+.left-photo p {
+    flex: 1; /* Текст занимает оставшееся пространство */
+}
+
+/* Картинки справа */
+.right-photo .service-details {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.right-photo img {
+    order: 0; /* Картинка остается справа */
+    max-width: 150px;
+    height: auto;
+}
+
+.right-photo p {
+    flex: 1; /* Текст занимает оставшееся пространство */
+}
+
+.services-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.services-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.services-container {
+    display: flex;
+    gap: 40px;
+}
+
+/* Стили для левого меню */
+.services-nav {
+    width: 300px;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.services-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services-nav li {
+    margin-bottom: 15px;
+}
+
+.service-btn {
+    width: 100%;
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.service-btn:hover,
+.service-btn.active {
+    background: #007bff;
+    color: white;
+}
+
+/* Стили для правого контента */
+.services-content {
+    flex: 1;
+}
+
+.service-details {
+    display: none;
+}
+
+.service-details.active {
+    display: block;
+}
+
+.service-info {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.service-info p {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.service-info img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: -75px;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+    }
+
+    .services-nav {
+        width: 100%;
+    }
+
+    .service-info {
+        flex-direction: column;
+    }
+
+    .service-info img {
+        width: 100%;
+    }
+}

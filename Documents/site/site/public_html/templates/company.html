@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании - ООО "МКД-СЕРВИС"</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/company.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="{{ url_for('static', filename='images/onsova-pech (1).png') }}" alt="Логотип" class="logo">
+                <div class="company-name">
+                    <span class="company-name-top">Общество с ограниченной ответственностью</span>
+                    <span class="company-name-bottom">"МКД-СЕРВИС"</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/company">О компании</a></li>
+                        <li><a href="/services">Услуги</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Объекты</a>
+                            <div class="dropdown-menu">
+                                <a href="/repair-works">Ремонтные работы</a>
+                                <a href="/serviced-objects">Обслуживаемые объекты</a>
+                            </div>
+                        </li>
+                        <li><a href="/contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>О нашей компании</h2>
+
+        <!-- Верхний блок текст и фото справа -->
+        <div class="about-section">
+            <p>Наша управляющая компания занимается обслуживанием жилых и коммерческих объектов </p>
+            <img src="{{ url_for('static', filename='images/pech_mkd.jpg') }}" alt="Фото компании">
+        </div>
+
+        <!-- Нижний блок фото слева и текст справа -->
+        <div class="content-section">
+            <img src="{{ url_for('static', filename='images/pech_mkd.jpg') }}" alt="Фото объекта">
+            <p>Мы обслуживаем широкий спектр объектов, включая жилые дома, офисы и торговые площади.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 ООО "МКД-СЕРВИС"</p>
+    </footer>
+</body>
+</html>

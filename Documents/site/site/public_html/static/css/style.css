@@ -1,0 +1,447 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgb(14, 155, 226);
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    height: 320px !important;
+    min-height: 320px !important;
+    width: 100% !important;
+    position: relative !important;
+}
+
+.header-container {
+    width: 100% !important;
+    max-width: 1800px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    height: 320px !important;
+}
+
+.logo-section {
+    display: flex !important;
+    align-items: flex-start !important;
+    position: relative !important;
+    z-index: 1 !important;
+    height: 320px !important;
+    width: 100% !important;
+}
+
+.logo {
+    height: 320px !important;
+    min-height: 320px !important;
+    margin: 0 !important;
+    padding-left: -35px !important;
+    padding-top: 5px !important;
+    display: block !important;
+}
+
+.company-name {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 380px;
+    top: 40px;
+    width: calc(100% - 380px - 20px);
+}
+
+.company-name-top {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 310px;
+}
+
+.company-name-bottom {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    letter-spacing: 33px;
+    text-transform: uppercase;
+    margin-left: 405px;
+}
+
+nav {
+    position: absolute;
+    top: 220px;
+    right: 20px;
+    width: calc(100% - 380px - 20px);
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+main {
+    padding: 30px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: rgb(14, 155, 226);
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+main h2 {
+    color: #00264d;
+}
+
+ul {
+    list-style: square inside;
+    padding-left: 0;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    gap: 20px;
+    width: 95%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.news-section, .about-section, .side-section {
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: 100%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.news-section *, .about-section *, .side-section * {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.news-section {
+    margin-right: 10px;
+    max-height: 800px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.side-section {
+    margin-left: 10px;
+}
+
+.news-list a {
+    text-decoration: none;
+    color: #00264d;
+}
+
+.news-list a:hover {
+    color: #ffd700;
+}
+
+.company-photo {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.emergency-numbers {
+    list-style: none;
+    padding: 0;
+}
+
+.emergency-numbers li {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+.weather-info {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-temp {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    color: #00264d;
+}
+
+.weather-desc {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #666;
+    text-transform: capitalize;
+}
+
+.weather-details {
+    margin: 10px 0;
+    padding: 10px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.weather-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.weather-update {
+    font-size: 0.8em;
+    color: #888;
+    margin: 5px 0 0 0;
+}
+
+/* Стили для основного контента */
+.main-content {
+    padding: 30px;
+    background: #fff;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Стили для блоков */
+.news-block, .company-block, .weather-block {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .main-content {
+        grid-template-columns: 1fr; /* в одну колонку на мобильных */
+        gap: 15px;
+    }
+}
+
+/* Стили для новостей */
+.news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.news-item h3 {
+    color: #00264d;
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.news-item p {
+    color: #666;
+    margin: 10px 0;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.news-date {
+    display: block;
+    color: #888;
+    font-size: 0.85em;
+    margin-top: 10px;
+}
+
+.news-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Анимация при наведении */
+.news-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+/* Стили для кнопок в админке */
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.object-item {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.admin-form {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    color: #333 !important;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    font-size: 16px !important;
+}
+
+.dropdown-menu a:hover {
+    background: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-toggle::after {
+    content: '▼';
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.dropdown:hover .dropdown-toggle::after {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+/* Стилизация скроллбара */
+.news-section::-webkit-scrollbar {
+    width: 8px;
+}
+
+.news-section::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.news-section::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.news-section::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Для Firefox */
+.news-section {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}

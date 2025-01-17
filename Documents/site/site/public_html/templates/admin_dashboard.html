@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель администратора | МКД-Сервис</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Добавляем favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <!-- Добавляем мета-теги для безопасности -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:;">
+</head>
+<body>
+    <div class="admin-container">
+        <div class="admin-header">
+            <h1>Панель администратора</h1>
+            <div class="header-buttons">
+                <a href="{{ url_for('home') }}" class="btn btn-secondary">На сайт</a>
+                <a href="{{ url_for('admin_logout') }}" class="btn btn-danger">Выйти</a>
+            </div>
+        </div>
+
+        <!-- Flash сообщения -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <!-- Навигация -->
+        <ul class="nav nav-tabs" id="adminTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="statistics-tab" data-bs-toggle="tab" data-bs-target="#statistics" type="button" role="tab" aria-controls="statistics" aria-selected="true">Статистика</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="management-tab" data-bs-toggle="tab" data-bs-target="#management" type="button" role="tab" aria-controls="management" aria-selected="false">Управление</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contacts-tab" data-bs-toggle="tab" data-bs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Контакты</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="logs-tab" data-bs-toggle="tab" data-bs-target="#logs" type="button" role="tab" aria-controls="logs" aria-selected="false">Логи</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="adminTabContent">
+            <!-- Статистика -->
+            <div class="tab-pane fade show active" id="statistics">
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Посещения сегодня</h5>
+                                <h2 class="card-text">{{ daily_visits if daily_visits is defined else 0 }}</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Всего объектов</h5>
+                                <h2 class="card-text">{{ objects|length if objects is defined else 0 }}</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Активных работ</h5>
+                                <h2 class="card-text">{{ repairs|length if repairs is defined else 0 }}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-container mt-4">
+                    <canvas id="visitsChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Управление -->
+            <div class="tab-pane fade" id="management">
+                <div class="row mt-4">
+                    <!-- Формы добавления -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Добавить новость</h5>
+                                <form action="{{ url_for('add_news') }}" method="POST" class="needs-validation" novalidate>
+                                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" name="title" required placeholder="Заголовок" maxlength="255">
+                                        <div class="invalid-feedback">Пожалуйста, введите заголовок</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" name="content" required placeholder="Содержание"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Добавить</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Добавить объект</h5>
+                                <form action="{{ url_for('add_object') }}" method="POST" class="needs-validation" novalidate>
+                                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" name="object_address" required placeholder="Адрес">
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" name="object_description" required placeholder="Характеристики"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="number" class="form-control" name="square_meters" required placeholder="Площадь (м²)" step="0.01">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Добавить</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Добавить работы</h5>
+                                <form action="{{ url_for('add_repair') }}" method="POST" class="needs-validation" novalidate>
+                                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" name="repair_address" required placeholder="Адрес">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" name="work_type" required placeholder="Тип работ">
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" name="repair_description" required placeholder="Описание работ"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Добавить</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Списки существующих элементов -->
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Новости</h5>
+                                <div class="list-group">
+                                    {% if news_items %}
+                                        {% for news in news_items %}
+                                        <div class="list-group-item">
+                                            <h6>{{ news.title|e }}</h6>
+                                            <p class="mb-1">{{ news.content|e[:100] }}...</p>
+                                            <form action="{{ url_for('delete_news', news_id=news.id) }}" method="POST" class="d-inline">
+                                                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                                                <button type="submit" class="btn btn-danger btn-sm" 
+                                                        onclick="return confirm('Удалить новость?')">Удалить</button>
+                                            </form>
+                                        </div>
+                                        {% endfor %}
+                                    {% else %}
+                                        <p>Нет новостей</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Объекты</h5>
+                                <div class="list-group">
+                                    {% if objects %}
+                                        {% for object in objects %}
+                                        <div class="list-group-item">
+                                            <h6>{{ object.address|e }}</h6>
+                                            <p class="mb-1">{{ object.characteristics|e }}</p>
+                                            <small>Площадь: {{ object.square_meters }} м²</small>
+                                            <form action="{{ url_for('delete_object', object_id=object.id) }}" method="POST" class="d-inline">
+                                                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                                                <button type="submit" class="btn btn-danger btn-sm"
+                                                        onclick="return confirm('Удалить объект?')">Удалить</button>
+                                            </form>
+                                        </div>
+                                        {% endfor %}
+                                    {% else %}
+                                        <p>Нет объектов</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ремонтные работы</h5>
+                                <div class="list-group">
+                                    {% if repairs %}
+                                        {% for repair in repairs %}
+                                        <div class="list-group-item">
+                                            <h6>{{ repair.work_type|e }}</h6>
+                                            <p class="mb-1">{{ repair.address|e }}</p>
+                                            <small>{{ repair.description|e }}</small>
+                                            <form action="{{ url_for('delete_repair', repair_id=repair.id) }}" method="POST" class="d-inline">
+                                                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                                                <button type="submit" class="btn btn-danger btn-sm"
+                                                        onclick="return confirm('Удалить работы?')">Удалить</button>
+                                            </form>
+                                        </div>
+                                        {% endfor %}
+                                    {% else %}
+                                        <p>Нет ремонтных работ</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Контакты -->
+            <div class="tab-pane fade" id="contacts">
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Редактировать контакты</h5>
+                        <form action="{{ url_for('update_contacts') }}" method="POST" class="needs-validation" novalidate>
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                            <div class="mb-3">
+                                <label class="form-label">Телефон</label>
+                                <input type="text" class="form-control" name="phone" 
+                                    value="{{ contacts.phone if contacts is defined and contacts else '' }}">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" name="email" 
+                                    value="{{ contacts.email if contacts is defined and contacts else '' }}">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Адрес</label>
+                                <textarea class="form-control" name="address">{{ contacts.address if contacts is defined and contacts else '' }}</textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Часы работы</label>
+                                <textarea class="form-control" name="working_hours">{{ contacts.working_hours if contacts is defined and contacts else '' }}</textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Обновить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Логи -->
+            <div class="tab-pane fade" id="logs">
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Системные логи</h5>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Время</th>
+                                        <th>Действие</th>
+                                        <th>Категория</th>
+                                        <th>Описание</th>
+                                        <th>IP</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% if system_logs %}
+                                        {% for log in system_logs %}
+                                        <tr>
+                                            <td>{{ log.timestamp.strftime('%Y-%m-%d %H:%M:%S') if log.timestamp is defined else 'Нет даты' }}</td>
+                                            <td>{{ log.action }}</td>
+                                            <td>{{ log.category }}</td>
+                                            <td>{{ log.description }}</td>
+                                            <td>{{ log.ip_address }}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    {% else %}
+                                        <tr>
+                                            <td colspan="5">Нет записей в логах</td>
+                                        </tr>
+                                    {% endif %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Валидация форм -->
+    <script>
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+
+    <!-- График -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                const ctx = document.getElementById('visitsChart');
+                if (!ctx) {
+                    console.error('Canvas element not found');
+                    return;
+                }
+                
+                const chartData = {{ chart_data|tojson|safe if chart_data is defined else '{"labels":[],"values":[]}' }};
+                
+                if (!chartData || !Array.isArray(chartData.labels) || !Array.isArray(chartData.values)) {
+                    console.error('Invalid chart data format');
+                    return;
+                }
+
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: chartData.labels,
+                        datasets: [{
+                            label: 'Посещения',
+                            data: chartData.values,
+                            borderColor: '#0d6efd',
+                            backgroundColor: 'rgba(13, 110, 253, 0.1)',
+                            borderWidth: 2,
+                            tension: 0.3,
+                            fill: true
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    precision: 0
+                                }
+                            }
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error('Ошибка инициализации графика:', error);
+            }
+        });
+    </script>
+
+    <script>
+    window.addEventListener('error', function(e) {
+        console.error('Script loading error:', e);
+    }, true);
+    </script>
+</body>
+</html>
