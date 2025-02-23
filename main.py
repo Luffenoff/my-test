@@ -42,6 +42,44 @@ def generate_password(length: int, use_digits: bool, use_special: bool) -> str:
     return "".join(random.choice(chars) for _ in range(length))
 
 
+def hash_password(password: str) -> str:
+    salt = bcrypt.gensalt()
+    return bcrypt.hashpw(password.encode(), salt).decode()
+
+
+def create_jwt_token(username: str):
+    payload = {
+            "sub": username,
+            "exp": datetime.datetime.utcnow() + datetime.timedelta(hours=1)
+    }
+    return jwt.encode(payload, SECRET_KEY, algorithm="HS256")
+
+
+def verify_token(token: str = Depends(oauth2_scheme)):
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        return payload["sub"]
+    except jwt.ExpiredSignatureError:
+        raise HTTPException(status_code=401, detail="Token expired")
+    except jwt.InvalidTokenError:
+        raise HTTPException(status_code=401, detail="Invalid token")
+
+
+@app.post("/token/")
+def login(form_data: OAuth2PasswordRequestForm = Depends()):
+    if form_data.username == "admin" and form_data.password == "password":
+        return {"access_token": create_jwt_token(form_data.username), "token_type": "bearer"}
+    raise HTTPException(status_code=401, detail="Invalid credentials")
+
+
+@app.post("/generate/")
+def generate(password_request: PasswordRequests, user: str = Depends(verify_token)):
+    password = generate_password(password_request.length, password_request.use_digits, password_request.use_special)
+    cursor.execute("INSERT INTO password (password) VALUES (?)", (hashed_password,))
+    conn.commit()
+    return {"password": password, "hashed_password": hashed_password}
+
+
 @app.post("/generate/")
 def generate(password_request: PasswordRequests):
     password = generate_password(password_request.length, password_request.use_digits, password_request.use_special)
@@ -49,8 +87,9 @@ def generate(password_request: PasswordRequests):
 
 
 @app.get("/history/")
-def get_history():
-    return {"history": history[-10]
+def get_history(user: str = Depends(verify_token)):
+    cursor.execute("SELECT password FROM passwords ORDER BY id DESK LIMIT 10")
+    return "history": [row[0] for row in cursor.fetchall()]}
 
 
 if __name__ == "__main__":
