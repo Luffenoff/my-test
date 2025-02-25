@@ -14,15 +14,34 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 app = FastAPI()
 
 
-conn = sqlite3.connect("passwords.db", check_same_thread=False0)
+conn = sqlite3.connect("passwords.db", check_same_thread=False)
 cursor = conn.cursor()
-cursor.execute("CREATE TABLE IF NO EXISTS passwords (id INTEGER PRIMARY KEY, password TEXT )")
+cursor.execute("CREATE TABLE IF NOT EXISTS passwords (id INTEGER PRIMARY KEY, password TEXT )")
+cursor.execute("""
+               CREATE TABLE IF NOT EXISTS users (
+                   id INTEGER PRIMARY KEY,
+                   username TEXT UNIQUE,
+                   hashes_password TEXT
+               )
+""")
+cursor.execute("""
+               CREATE TABLE IF NOT EXISTS passwords (
+                   id INTEGER PRIMARY KEY,
+                   user_id INTEGER,
+                   password TEXT,
+                   FOREIGN KEY(user_id) REFERENCES users(id)
+               )
+""")
 conn.commit()
 
 
 SECRET_KEY = "schailehmon141"
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
+
+class RegisterRequest(BaseModel):
+    username: str
+    password: str
 
 class PasswordRequests(BaseModel):
     length: int
@@ -46,6 +65,16 @@ def hash_password(password: str) -> str:
     salt = bcrypt.gensalt()
     return bcrypt.hashpw(password.encode(), salt).decode()
 
+
+@app.post("/register/")
+def register(user: RegisterRequest):
+    hashed_password = hash_password(user.password)
+    try:
+        cursor.execute("INSER INTO users (username, hashed_password) VALUES(?,?)", (user.username, hashed_password))
+        conn.commit()
+    except sqlite3.IntegrityError:
+        raise HTTPException(status_code=400, detail="Username already exists")
+    return {"message": "User registered successfully"}
 
 def create_jwt_token(username: str):
     payload = {
@@ -75,21 +104,16 @@ def login(form_data: OAuth2PasswordRequestForm = Depends()):
 @app.post("/generate/")
 def generate(password_request: PasswordRequests, user: str = Depends(verify_token)):
     password = generate_password(password_request.length, password_request.use_digits, password_request.use_special)
-    cursor.execute("INSERT INTO password (password) VALUES (?)", (hashed_password,))
+    hashed_password = hash_password(password)
+    cursor.execute("INSERT INTO passwords (password) VALUES (?)", (hashed_password,))
     conn.commit()
     return {"password": password, "hashed_password": hashed_password}
 
 
-@app.post("/generate/")
-def generate(password_request: PasswordRequests):
-    password = generate_password(password_request.length, password_request.use_digits, password_request.use_special)
-    return {"password": password}
-
-
 @app.get("/history/")
 def get_history(user: str = Depends(verify_token)):
-    cursor.execute("SELECT password FROM passwords ORDER BY id DESK LIMIT 10")
-    return "history": [row[0] for row in cursor.fetchall()]}
+    cursor.execute("SELECT password FROM passwords ORDER BY id DESC LIMIT 10")
+    return {"history": [row[0] for row in cursor.fetchall()]}
 
 
 if __name__ == "__main__":
