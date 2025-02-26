@@ -21,7 +21,7 @@ cursor.execute("""
                CREATE TABLE IF NOT EXISTS users (
                    id INTEGER PRIMARY KEY,
                    username TEXT UNIQUE,
-                   hashes_password TEXT
+                   hashed_password TEXT
                )
 """)
 cursor.execute("""
@@ -61,16 +61,25 @@ def generate_password(length: int, use_digits: bool, use_special: bool) -> str:
     return "".join(random.choice(chars) for _ in range(length))
 
 
+def get_user(username: str):
+    cursor.execute("SELECT id, username, hashed_password FROM users WHERE username = ?", (username,))
+    return cursor.fetchone()
+
+
 def hash_password(password: str) -> str:
     salt = bcrypt.gensalt()
     return bcrypt.hashpw(password.encode(), salt).decode()
+
+
+def verify_password(plain_password: str, hashed_password: str) -> bool:
+    return bcrypt.checkpw(plain_password.encode(), hashed_password.encode())
 
 
 @app.post("/register/")
 def register(user: RegisterRequest):
     hashed_password = hash_password(user.password)
     try:
-        cursor.execute("INSER INTO users (username, hashed_password) VALUES(?,?)", (user.username, hashed_password))
+        cursor.execute("INSERT INTO users (username, hashed_password) VALUES(?,?)", (user.username, hashed_password))
         conn.commit()
     except sqlite3.IntegrityError:
         raise HTTPException(status_code=400, detail="Username already exists")
@@ -96,9 +105,11 @@ def verify_token(token: str = Depends(oauth2_scheme)):
 
 @app.post("/token/")
 def login(form_data: OAuth2PasswordRequestForm = Depends()):
-    if form_data.username == "admin" and form_data.password == "password":
-        return {"access_token": create_jwt_token(form_data.username), "token_type": "bearer"}
-    raise HTTPException(status_code=401, detail="Invalid credentials")
+    user = get_user(form_data.username)
+    if not user or not verify_password(form_data.password, user[2]):
+        raise HTTPException(status_code=401, detail="Invalid username or password")
+    access_token = create_jwt_token(user[1])
+    return {"access_token": access_token, "token_type": "bearer"}
 
 
 @app.post("/generate/")
