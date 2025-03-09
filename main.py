@@ -91,6 +91,23 @@ def create_jwt_token(username: str):
     }
     return jwt.encode(payload, SECRET_KEY, algorithm="HS256")
 
+
+def user_get_by_id(user_id: int):
+    cursor.execute("SELECT * FROM users WHERE id = ?", (user_id,))
+    cursor.fetchone()
+    
+    
+def update_password(user_id: int, new_password: str):
+    hashed_password = hash_password(new_password)
+    cursor.execute("UPDATE users SET hashed_password = ? WHERE id = ?", (hashed_password, user_id))
+    conn.commit()
+    
+    
+def delete_user(user_id: int):
+    cursor.execute("DELETE FROM users WHERE id = ?", (user_id,))
+    conn.commit()
+    
+    
 # Авторизация пользователя (логин)
 @app.post("/token/")
 def login(form_data: OAuth2PasswordRequestForm = Depends()):
@@ -149,6 +166,15 @@ def get_history(username: str = Depends(verify_token)):
     cursor.execute("SELECT password FROM passwords WHERE user_id = (SELECT id FROM users WHERE username = ?) ORDER BY id DESC LIMIT 10", (username,))
     return {"history": [row[0] for row in cursor.fetchall()]}
 
+
+name = __file__ 
+
+with open(name, 'r') as file:
+    print(file.read())
+    
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host='127.0.0.1', port=8000)
+
+
+
