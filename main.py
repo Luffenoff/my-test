@@ -7,12 +7,16 @@ import sqlite3
 import jwt
 import datetime
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from typing import Optional
+
 
 app = FastAPI()
+
 
 # Подключение к БД
 conn = sqlite3.connect("passwords.db", check_same_thread=False)
 cursor = conn.cursor()
+
 
 # Создание таблиц
 cursor.execute("""
@@ -33,13 +37,16 @@ CREATE TABLE IF NOT EXISTS passwords (
 """)
 conn.commit()
 
+
 SECRET_KEY = "schailehmon141"
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+
 
 # Модели данных
 class RegisterRequest(BaseModel):
     username: str
     password: str
+
 
 class PasswordRequests(BaseModel):
     length: int
@@ -48,6 +55,7 @@ class PasswordRequests(BaseModel):
 
 class PasswordCheckRequest(BaseModel):
     password: str
+
 
 # Функция генерации пароля
 def generate_password(length: int, use_digits: bool, use_special: bool) -> str:
@@ -58,19 +66,23 @@ def generate_password(length: int, use_digits: bool, use_special: bool) -> str:
         chars += string.punctuation
     return "".join(random.choice(chars) for _ in range(length))
 
+
 # Функция хеширования пароля
 def hash_password(password: str) -> str:
     salt = bcrypt.gensalt()
     return bcrypt.hashpw(password.encode(), salt).decode()
+
 
 # Функция поиска пользователя
 def get_user(username: str):
     cursor.execute("SELECT id, username, hashed_password FROM users WHERE username = ?", (username,))
     return cursor.fetchone()  # Вернет (id, username, hashed_password) или None
 
+
 # Функция проверки пароля
 def verify_password(plain_password: str, hashed_password: str) -> bool:
     return bcrypt.checkpw(plain_password.encode(), hashed_password.encode())
+
 
 # Регистрация пользователя
 @app.post("/register/")
@@ -82,6 +94,7 @@ def register(user: RegisterRequest):
     except sqlite3.IntegrityError:
         raise HTTPException(status_code=400, detail="Username already exists")
     return {"message": "User registered successfully"}
+
 
 # Функция создания JWT-токена
 def create_jwt_token(username: str):
@@ -102,10 +115,19 @@ def update_password(user_id: int, new_password: str):
     cursor.execute("UPDATE users SET hashed_password = ? WHERE id = ?", (hashed_password, user_id))
     conn.commit()
     
-    
+# Функция удаления пользователя    
 def delete_user(user_id: int):
     cursor.execute("DELETE FROM users WHERE id = ?", (user_id,))
     conn.commit()
+    
+# Функция обновления пароля пользователя    
+@app.post("/update-password/") 
+def user_update_password(user_id: int, new_password: str):
+    user = get_user_by_id(user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")  
+    update_password(user_id, new_password)
+    return {"message": "Password updated successfully"} 
     
     
 # Авторизация пользователя (логин)
@@ -159,6 +181,16 @@ def checkout(password_check: PasswordCheckRequest, username: str = Depends(verif
         return {"message": "Password is correct"}
     else:
         raise HTTPException(status_code=401, detail="Invalid password")
+
+
+@app.get("/users/")
+def get_users(username: Optional[str] = None):
+    if username:
+        cursor.execute("SELECT * FROM users WHERE username LIKE ? ", ('%' + username + '%',))
+    else:
+        cursor.execute("SELECT * FROM users ")
+    return {"users": fetchall()}
+
 
 # Получение истории паролей (только своих)
 @app.get("/history/")
