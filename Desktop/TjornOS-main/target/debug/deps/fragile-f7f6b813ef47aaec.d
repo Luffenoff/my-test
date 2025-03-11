@@ -1,0 +1,11 @@
+C:\Users\zroma\Desktop\TjornOS-main\target\debug\deps\libfragile-f7f6b813ef47aaec.rmeta: C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\lib.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\errors.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\fragile.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\registry.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\semisticky.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\sticky.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\thread_id.rs
+
+C:\Users\zroma\Desktop\TjornOS-main\target\debug\deps\fragile-f7f6b813ef47aaec.d: C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\lib.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\errors.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\fragile.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\registry.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\semisticky.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\sticky.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\thread_id.rs
+
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\lib.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\errors.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\fragile.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\registry.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\semisticky.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\sticky.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fragile-2.0.0\src\thread_id.rs:

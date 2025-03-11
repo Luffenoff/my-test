@@ -1,0 +1,12 @@
+C:\Users\zroma\Desktop\TjornOS-main\target\debug\deps\libanes-f879b76c90cfcd2c.rmeta: C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\lib.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\macros.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\sequences.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\sequences\attribute.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\sequences\buffer.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\sequences\color.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\sequences\cursor.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\sequences\terminal.rs
+
+C:\Users\zroma\Desktop\TjornOS-main\target\debug\deps\anes-f879b76c90cfcd2c.d: C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\lib.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\macros.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\sequences.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\sequences\attribute.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\sequences\buffer.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\sequences\color.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\sequences\cursor.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\sequences\terminal.rs
+
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\lib.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\macros.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\sequences.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\sequences\attribute.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\sequences\buffer.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\sequences\color.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\sequences\cursor.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anes-0.1.6\src\sequences\terminal.rs:

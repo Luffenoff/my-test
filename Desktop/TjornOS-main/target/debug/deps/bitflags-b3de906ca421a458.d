@@ -1,0 +1,11 @@
+C:\Users\zroma\Desktop\TjornOS-main\target\debug\deps\libbitflags-b3de906ca421a458.rmeta: C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\lib.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\iter.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\parser.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\traits.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\public.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\internal.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\external.rs
+
+C:\Users\zroma\Desktop\TjornOS-main\target\debug\deps\bitflags-b3de906ca421a458.d: C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\lib.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\iter.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\parser.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\traits.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\public.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\internal.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\external.rs
+
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\lib.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\iter.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\parser.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\traits.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\public.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\internal.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.0\src\external.rs:

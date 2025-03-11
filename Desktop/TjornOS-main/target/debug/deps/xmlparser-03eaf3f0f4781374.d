@@ -1,0 +1,11 @@
+C:\Users\zroma\Desktop\TjornOS-main\target\debug\deps\libxmlparser-03eaf3f0f4781374.rmeta: C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\lib.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\error.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\stream.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\strspan.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\xmlchar.rs
+
+C:\Users\zroma\Desktop\TjornOS-main\target\debug\deps\libxmlparser-03eaf3f0f4781374.rlib: C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\lib.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\error.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\stream.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\strspan.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\xmlchar.rs
+
+C:\Users\zroma\Desktop\TjornOS-main\target\debug\deps\xmlparser-03eaf3f0f4781374.d: C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\lib.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\error.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\stream.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\strspan.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\xmlchar.rs
+
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\lib.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\error.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\stream.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\strspan.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xmlparser-0.13.6\src\xmlchar.rs:

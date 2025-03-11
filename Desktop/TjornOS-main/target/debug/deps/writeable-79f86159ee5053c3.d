@@ -1,0 +1,11 @@
+C:\Users\zroma\Desktop\TjornOS-main\target\debug\deps\libwriteable-79f86159ee5053c3.rmeta: C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\lib.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\cmp.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\impls.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\ops.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\parts_write_adapter.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\testing.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\try_writeable.rs
+
+C:\Users\zroma\Desktop\TjornOS-main\target\debug\deps\writeable-79f86159ee5053c3.d: C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\lib.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\cmp.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\impls.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\ops.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\parts_write_adapter.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\testing.rs C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\try_writeable.rs
+
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\lib.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\cmp.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\impls.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\ops.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\parts_write_adapter.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\testing.rs:
+C:\Users\zroma\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.5.5\src\try_writeable.rs:

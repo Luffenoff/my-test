@@ -1,0 +1,241 @@
+[package]
+name = "tjornos"
+version = "0.1.0"
+edition = "2021"
+authors = ["TjornOS Team"]
+description = "Современная операционная система на Rust"
+license = "MIT"
+repository = "https://github.com/Luffenoff/TjornOS"
+
+[dependencies]
+# Системные зависимости
+tokio = { version = "1.0", features = ["full"] }
+async-std = "1.12"
+futures = "0.3"
+crossbeam = "0.8"
+parking_lot = "0.12"
+rayon = "1.7"
+num_cpus = "1.15"
+
+# Графика и GUI
+vulkano = "0.33"
+vulkano-shaders = "0.33"
+winit = "0.28"
+wgpu = { version = "0.17", features = ["webgl"] }
+egui = { version = "0.22", features = ["default_fonts"] }
+image = "0.24"
+glam = "0.24"
+gpu-allocator = "0.22"
+ash = "0.37"
+
+# 3D графика
+three-d = "0.15"
+bevy = { version = "0.11", default-features = false, features = [
+    "bevy_winit",
+    "bevy_render",
+] }
+
+# Аудио
+cpal = { version = "0.15", optional = true }
+rodio = { version = "0.17", features = ["symphonia-all"] }
+symphonia = { version = "0.5", features = ["all"], optional = true }
+hound = "3.5"
+minimp3 = "0.5"
+
+# Сеть
+tokio-tungstenite = "0.20"
+reqwest = { version = "0.11", features = ["json", "rustls-tls"] }
+trust-dns-resolver = "0.22"
+quinn = "0.10"
+rustls = { version = "0.21", features = ["dangerous_configuration"] }
+
+# Безопасность
+ring = "0.16"
+argon2 = "0.5"
+aes-gcm = "0.10"
+ed25519-dalek = "1.0"
+x509-parser = "0.15"
+zeroize = "1.6"
+
+# Файловая система
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.7"
+bincode = "1.3"
+zip = "0.6"
+tar = "0.4"
+walkdir = "2.3"
+
+# База данных
+rusqlite = { version = "0.29", features = ["bundled"] }
+redis = { version = "0.23", features = ["tokio-comp"] }
+mongodb = "2.6"
+
+# AI и ML
+tch = "0.13"
+tract = "0.19"
+tensorflow = { version = "0.20.0", optional = true }
+burn = { version = "0.8", optional = true }
+
+# Опциональные зависимости
+hypervisor = { version = "0.0.8", optional = true }
+rdp = { version = "0.1", optional = true }
+vnc = { version = "0.4", optional = true }
+ndarray = { version = "0.15", features = ["rayon"], optional = true }
+smartcore = { version = "0.3", optional = true }
+linfa = { version = "0.6", optional = true }
+
+# Контейнеризация и системные компоненты
+cgroups-rs = { version = "0.3", optional = true }
+nix = { version = "0.26", optional = true }
+container = { version = "0.1", optional = true }
+
+# Мониторинг
+prometheus = { version = "0.13", optional = true }
+opentelemetry = { version = "0.19", features = ["rt-tokio"], optional = true }
+metrics = { version = "0.21", optional = true }
+tracing = { version = "0.1", features = ["async-await"], optional = true }
+
+# Компьютерное зрение
+opencv = { version = "0.84", features = ["clang-runtime"], optional = true }
+imageproc = { version = "0.23", optional = true }
+rustface = { version = "0.1", optional = true }
+tract-onnx = { version = "0.19", optional = true }
+
+# Рендеринг
+lyon = { version = "1.0", optional = true }
+pathfinder_geometry = { version = "0.5", optional = true }
+cosmic-text = { version = "0.9", optional = true }
+tiny-skia = { version = "0.11", optional = true }
+
+# Распознавание речи
+whisper-rs = { version = "0.8", optional = true }
+vosk = { version = "0.2", optional = true }
+tokenizers = { version = "0.13", optional = true }
+
+# Физика
+rapier3d = { version = "0.17", features = ["parallel"], optional = true }
+rapier2d = { version = "0.17", features = ["parallel"], optional = true }
+salva3d = { version = "0.7", optional = true }
+physx = { version = "0.18", optional = true }
+
+# Мультимедиа
+gstreamer = { version = "0.20", optional = true }
+ffmpeg-next = { version = "6.0", optional = true }
+
+# Сетевые протоколы и виртуализация
+tokio-modbus = { version = "0.5", optional = true }
+coap = { version = "0.13", optional = true }
+rumqttc = { version = "0.20", optional = true }
+tonic = { version = "0.9", optional = true }
+kvm-ioctls = { version = "0.13", optional = true }
+vhost = { version = "0.7", optional = true }
+virtio-bindings = { version = "0.2", optional = true }
+gdb-protocol = { version = "0.1", optional = true }
+perf-event = { version = "0.4", optional = true }
+tracy-client = { version = "0.15", optional = true }
+
+[features]
+default = ["gui", "audio", "network", "security"]
+gui = ["vulkan", "opengl"]
+vulkan = []
+opengl = []
+audio = ["dep:cpal", "dep:symphonia", "basic-audio", "advanced-audio"]
+basic-audio = []
+advanced-audio = []
+network = ["basic-network", "advanced-network"]
+basic-network = []
+advanced-network = []
+security = ["encryption", "authentication"]
+encryption = []
+authentication = []
+minimal = []
+full = ["gui", "audio", "network", "security", "ai", "database"]
+ai = ["dep:tensorflow", "dep:burn", "dep:tract-onnx"]
+database = []
+
+# Системные фичи
+virtualization = ["dep:kvm-ioctls", "dep:vhost", "dep:virtio-bindings"]
+containers = ["dep:nix", "dep:container", "dep:cgroups-rs"]
+debugging = ["dep:gdb-protocol", "dep:perf-event", "dep:tracy-client"]
+
+# Сетевые фичи
+protocols = ["dep:tokio-modbus", "dep:coap", "dep:rumqttc", "dep:tonic"]
+
+# Мониторинг
+monitoring = ["dep:prometheus", "dep:opentelemetry"]
+
+# Мультимедиа и графика
+vision = ["dep:opencv", "dep:imageproc", "dep:rustface", "dep:tract-onnx"]
+image-processing = []
+multimedia = ["dep:gstreamer", "dep:ffmpeg-next"]
+physics = ["dep:rapier3d", "dep:rapier2d", "dep:salva3d", "dep:physx"]
+rendering = [
+    "dep:lyon",
+    "dep:pathfinder_geometry",
+    "dep:cosmic-text",
+    "dep:tiny-skia",
+]
+speech = [
+    "dep:whisper-rs",
+    "dep:vosk",
+    "dep:tokenizers",
+    "dep:cpal",
+    "dep:symphonia",
+]
+
+# Контейнеризация
+cgroups = ["dep:cgroups-rs"]
+container = ["dep:container"]
+
+[dev-dependencies]
+criterion = "0.5"
+mockall = "0.11"
+proptest = "1.2"
+test-case = "3.1"
+tokio = { version = "1.0", features = ["full", "test-util"] }
+anyhow = "1.0"
+pretty_assertions = "1.0"
+
+[profile.dev]
+opt-level = 0
+debug = true
+debug-assertions = true
+overflow-checks = true
+lto = false
+panic = "unwind"
+incremental = true
+codegen-units = 256
+rpath = false
+
+[profile.release]
+opt-level = 3
+debug = false
+debug-assertions = false
+overflow-checks = false
+lto = true
+panic = "abort"
+incremental = false
+codegen-units = 1
+rpath = false
+strip = true
+
+[profile.test]
+opt-level = 0
+debug = true
+debug-assertions = true
+overflow-checks = true
+lto = false
+panic = "unwind"
+incremental = true
+codegen-units = 256
+rpath = false
+
+[workspace]
+members = [
+    "crates/tjorn-vision",
+    "crates/tjorn-gui",
+    "crates/tjorn-ai",
+    "crates/tjorn-core",
+]
+resolver = "2"
