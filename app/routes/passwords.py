@@ -3,7 +3,7 @@ import string
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from ..database import get_db
-from schemas import PasswordCreate
+from ..schemas import PasswordCreate
 from ..models import Password
 from ..security import hash_password
 
