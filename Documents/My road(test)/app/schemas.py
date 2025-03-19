@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class UserBase(BaseModel):
@@ -19,5 +19,5 @@ class UserResponse(UserBase):
         
 class PasswordCreate(BaseModel):
     length: int
-    use_digits: True
-    use_special: False
+    use_digits: bool = Field(default = True)
+    use_special: bool = Field(default = False)

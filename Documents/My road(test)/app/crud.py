@@ -4,7 +4,7 @@ from .security import hash_password
 
 
 
-def create(db: Session, user: schemas.UserCreate):
+def create_user(db: Session, user: schemas.UserCreate):
     hashed_password = hash_password(user.password)
     db_user = models.User(username=user.username, hashed_password=hashed_password)
     db.add(db_user)
